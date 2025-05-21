@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ✅ SEO + Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sumit Chaurasiya - Portfolio, Education, Goals, Achievements" />
+  <meta name="author" content="Sumit Dharmendra Chaurasiya" />
+  <meta property="og:title" content="Sumit Chaurasiya Portfolio" />
+  <meta property="og:image" content="Sumit_photo.jpg" />
+  <meta property="og:description" content="Personal introduction portfolio site of Sumit Chaurasiya." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Sumit Chaurasiya | Portfolio</title>
+
+  <!-- ✅ External Files -->
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- ✅ Header with Hamburger Menu -->
+  <header class="bg-blue-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Sumit Chaurasiya</h1>
+      <button class="md:hidden" onclick="toggleMenu()">☰</button>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#achievements" class="hover:underline">Achievements</a>
+        <a href="#goals" class="hover:underline">Goals</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="md:hidden hidden mt-2 text-center">
+      <a href="#about" class="block py-2">About</a>
+      <a href="#achievements" class="block py-2">Achievements</a>
+      <a href="#goals" class="block py-2">Goals</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- ✅ Welcome Section -->
+  <section class="bg-white text-center p-6">
+    <img src="Sumit_photo.jpg" alt="Sumit Chaurasiya" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+    <h2 class="text-3xl font-bold mb-2">Hi, I'm Sumit!</h2>
+    <p class="text-gray-600 mb-4">Computer Engineering student from Palghar, Maharashtra.</p>
+    <div class="aspect-w-16 aspect-h-9 max-w-xl mx-auto mb-4">
+      <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- ✅ About Section -->
+  <section id="about" class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+      <ul class="space-y-2">
+        <li><strong>Name:</strong> Sumit Dharmendra Chaurasiya</li>
+        <li><strong>Location:</strong> Palghar, Maharashtra</li>
+        <li><strong>Education:</strong> B.E. Computer Engineering (CGPA 8.09)</li>
+        <li><strong>Languages:</strong> English, Hindi, Marathi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ✅ Achievements from JSON -->
+  <section id="achievements" class="bg-white p-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Achievements</h3>
+      <div id="achievement-list" class="space-y-2"></div>
+    </div>
+  </section>
+
+  <!-- ✅ Goals -->
+  <section id="goals" class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Goals</h3>
+      <p>I aim to become a proficient software developer, build impactful projects, and contribute to open-source.</p>
+    </div>
+  </section>
+
+  <!-- ✅ Contact -->
+  <section id="contact" class="bg-blue-800 text-white p-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
+    <p>Email: <a href="mailto:chaurasiyasumit25539@gmail.com" class="underline">chaurasiyasumit25539@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919356742543" class="underline">+91 9356742543</a></p>
+    <p>WhatsApp: <a href="https://wa.me/919356742543" class="underline">Chat Now</a></p>
+    <div class="mt-4">
+      <iframe src="https://maps.google.com/maps?q=palghar&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-64 rounded-lg border-4 border-white"></iframe>
+    </div>
+    <div class="mt-4 space-x-4">
+      <a href="https://github.com/" target="_blank" class="underline">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" class="underline">LinkedIn</a>
+      <a href="https://instagram.com/" target="_blank" class="underline">Instagram</a>
+    </div>
+  </section>
+
+  <!-- ✅ Scroll to Top Button -->
+  <button onclick="scrollTopFunc()" class="fixed bottom-6 right-6 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition">
+    ⬆️
+  </button>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-gray-900 text-white p-4 text-center">
+    &copy; 2025 Sumit Chaurasiya. All rights reserved.
+  </footer>
+
+</body>
+</html>

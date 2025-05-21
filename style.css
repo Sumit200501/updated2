@@ -1,0 +1,52 @@
+/* General Settings */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header h1 {
+  letter-spacing: 0.5px;
+}
+
+/* Mobile Menu Animation (optional) */
+#mobile-menu {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Profile Image */
+img[alt="Sumit Chaurasiya"] {
+  border: 4px solid #2563eb; /* Tailwind blue-600 */
+  transition: transform 0.3s ease-in-out;
+}
+
+img[alt="Sumit Chaurasiya"]:hover {
+  transform: scale(1.05);
+}
+
+/* Iframe Embeds */
+iframe {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* Scroll to Top Button */
+button[onclick="scrollTopFunc()"] {
+  transition: background-color 0.3s ease;
+}
+
+/* Links */
+a.underline:hover {
+  text-decoration-thickness: 2px;
+  color: #1d4ed8; /* Tailwind blue-700 */
+}
+
+/* Footer */
+footer {
+  font-size: 0.875rem;
+  letter-spacing: 0.3px;
+}
